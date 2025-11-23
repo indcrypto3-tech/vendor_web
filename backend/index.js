@@ -12,6 +12,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Lightweight health endpoint to verify the function is reachable without DB
+app.get('/health', (req, res) => {
+	res.json({ ok: true, time: new Date().toISOString() });
+});
+
 app.use('/auth', authRoutes);
 app.use('/vendors', vendorRoutes);
 
