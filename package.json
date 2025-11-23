@@ -1,0 +1,7 @@
+{
+  "name": "vendorbackend-root",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd backend && npm install"
+  }
+}

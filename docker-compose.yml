@@ -1,0 +1,4 @@
+# Deprecated Docker Compose
+# This file was used for local docker-compose development but the project
+# is now configured to deploy to Vercel (serverless). Keep this file for
+# reference or remove it entirely if you no longer need Docker compose.

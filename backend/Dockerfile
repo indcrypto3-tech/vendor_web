@@ -1,0 +1,6 @@
+/*
+ Deprecated Dockerfile
+ The project is configured for serverless deployment to Vercel.
+ This Dockerfile is kept for reference only and is not used for Vercel deployments.
+ Remove this file if you no longer need container artifacts.
+*/
