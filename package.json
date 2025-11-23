@@ -2,7 +2,6 @@
   "name": "vendorbackend-root",
   "private": true,
   "scripts": {
-    "postinstall": "cd backend && npm install",
-    "build": "node backend/seed/seed.js"
+    "postinstall": "cd backend && npm install"
   }
 }
