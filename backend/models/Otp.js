@@ -6,6 +6,7 @@ const OtpSchema = new Schema({
   phone: { type: String, required: true, index: true },
   codeHash: { type: String, required: true },
   expiresAt: { type: Date, required: true, index: true }
+  , createdAt: { type: Date, default: Date.now }
 });
 
 // TTL index to let Mongo remove expired OTPs automatically

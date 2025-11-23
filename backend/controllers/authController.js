@@ -15,7 +15,7 @@ async function sendOtp(req, res) {
     const codeHash = await hashOtp(otp);
     const expiresAt = new Date(Date.now() + OTP_TTL_SECONDS * 1000);
 
-    await Otp.create({ requestId, phone, codeHash, expiresAt });
+    await Otp.create({ requestId, phone, codeHash, expiresAt, createdAt: new Date() });
 
     // Mock sending SMS in local/dev: log OTP
     console.log(`OTP for ${phone}: ${otp}`);
